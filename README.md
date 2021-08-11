@@ -10,7 +10,7 @@ Windows Setup:
 
 - Install Python VS Code Extension 
 - Install pip, pylint, and pep8
-- After everything is installed, open a terminal and run each command one at a time.
+- After everything is installed(Git for Windows, Python, and the Python VS Code extension), open a terminal and run each command one at a time.
 ```bash
 python -m pip install --upgrade pip
 pip install pylint
