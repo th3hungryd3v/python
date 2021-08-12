@@ -13,3 +13,6 @@ print(type(c))
 
 d = a + b
 print(d)
+
+name = input("What is your name? ")
+print("Hello, " + name + "!")
