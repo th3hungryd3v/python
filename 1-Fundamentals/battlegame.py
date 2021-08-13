@@ -18,11 +18,14 @@ while True:
     if character == 1 or "wizard":
         my_hp = wizard_hp
         my_damage = wizard_damage
+        break
     if character == 2 or "elf":
         my_hp = elf_hp
         my_damage = elf_damage
+        break
     if character == 3 or "human":
         my_hp = human_hp
         my_damage = human_damage
+        break
     else:
         print("Unknown character")
