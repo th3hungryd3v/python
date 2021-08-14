@@ -1,14 +1,18 @@
 # Global Character and Stat Variables
 # Task 1 - Set up your game variables: the game characters and their stats.
+# Characters
 wizard = "Wizard"
 elf = "Elf"
 human = "Human"
+# Character_HP
 wizard_hp = 70
 elf_hp = 100
 human_hp = 150
+# Character_damage
 wizard_damage = 150
 elf_damage = 100
 human_damage = 20
+# The Dragon 
 dragon_hp = 300
 dragon_damage = 50
 
@@ -17,7 +21,7 @@ while True:
     print("1)   Wizard")
     print("2)   Elf")
     print("3)   Human")
-    print("4)   Exit?")
+    print("4)   Exit Battle")
     character = int(input("Choose your character: "))
     if character == 1:
         character = wizard
