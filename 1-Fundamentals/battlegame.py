@@ -24,7 +24,7 @@ while True:
         my_damage = wizard_damage
         print("You have chosen the character: " + character)
         print("Health: " + str(my_hp))
-        print("Damage: " + str(my_damage))
+        print("Damage: " + str(my_damage) + "\n")
         break
     elif character == 2:
         character = elf
@@ -32,7 +32,7 @@ while True:
         my_damage = elf_damage
         print("You have chosen the character: " + character)
         print("Health: " + str(my_hp))
-        print("Damage: " + str(my_damage))
+        print("Damage: " + str(my_damage) + "\n")
         break
     elif character == 3:
         character = human
@@ -40,7 +40,7 @@ while True:
         my_damage = human_damage
         print("You have chosen the character: " + character)
         print("Health: " + str(my_hp))
-        print("Damage: " + str(my_damage))
+        print("Damage: " + str(my_damage) + "\n")
         break
     else:
         print("Unknown character")
@@ -48,7 +48,7 @@ while True:
 while True:
     dragon_hp = dragon_hp - my_damage
     print("The " + character + " damaged the Dragon!")
-    print("The Dragon's hitpoints are now: " + str(dragon_hp))
+    print("The Dragon's hitpoints are now: " + str(dragon_hp) + "\n")
     if dragon_hp == 0:
         print("The Dragon has lost the battle")
         break
