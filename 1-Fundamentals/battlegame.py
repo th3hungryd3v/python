@@ -17,6 +17,7 @@ while True:
     print("1)   Wizard")
     print("2)   Elf")
     print("3)   Human")
+    print("4)   Exit?")
     character = int(input("Choose your character: "))
     if character == 1:
         character = wizard
@@ -42,6 +43,8 @@ while True:
         print("Health: " + str(my_hp))
         print("Damage: " + str(my_damage) + "\n")
         break
+    elif character == 4:
+        exit()
     else:
         print("Unknown character")
 # Task 4 - Battle with the Dragon!
@@ -49,6 +52,12 @@ while True:
     dragon_hp = dragon_hp - my_damage
     print("The " + character + " damaged the Dragon!")
     print("The Dragon's hitpoints are now: " + str(dragon_hp) + "\n")
-    if dragon_hp == 0:
+    if dragon_hp <= 0:
         print("The Dragon has lost the battle")
+        break
+    my_hp = my_hp - dragon_damage
+    print("The Dragon strikes back at the " + character)
+    print("The " + character + "'s hitpoints are now: " + str(my_hp) + "\n")
+    if my_hp <= 0:
+        print("The " + character + " has lost the battle")
         break
