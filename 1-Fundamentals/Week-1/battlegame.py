@@ -22,8 +22,8 @@ while True:
     print("2)   Elf")
     print("3)   Human")
     print("4)   Exit Battle")
-    character = int(input("Choose your character: "))
-    if character == 1:
+    character = input("Choose your character: ")
+    if character == "1" or character == "Wizard":
         character = wizard
         my_hp = wizard_hp
         my_damage = wizard_damage
@@ -31,7 +31,7 @@ while True:
         print("Health: " + str(my_hp))
         print("Damage: " + str(my_damage) + "\n")
         break
-    elif character == 2:
+    elif character == "2" or character == "Elf":
         character = elf
         my_hp = elf_hp
         my_damage = elf_damage
@@ -39,7 +39,7 @@ while True:
         print("Health: " + str(my_hp))
         print("Damage: " + str(my_damage) + "\n")
         break
-    elif character == 3:
+    elif character == "3" or character == "Human":
         character = human
         my_hp = human_hp
         my_damage = human_damage
@@ -47,7 +47,7 @@ while True:
         print("Health: " + str(my_hp))
         print("Damage: " + str(my_damage) + "\n")
         break
-    elif character == 4:
+    elif character == "4":
         exit()
     else:
         print("Unknown character")
