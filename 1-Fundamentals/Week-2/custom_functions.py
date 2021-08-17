@@ -5,8 +5,22 @@
 """
 Function Syntax:
 
-def function_name():
+def function_name(): <== empty parameter list == no arguments
     statement
     statement
     etc..,
 """
+def myFn(): 
+    print("You have called my function")
+
+def add(x, y): # <== Two parameters == two arguments
+    z = x + y
+    print(z)
+
+myFn()
+add(12, 12)
+
+a = 12
+b = 24
+
+add(a, b)
