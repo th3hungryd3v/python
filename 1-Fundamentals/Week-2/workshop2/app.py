@@ -16,3 +16,15 @@ balance = 0
 print(user, "has been registered with a starting balance of $" + str(balance))
 
 # Task 3: Login and prompt for menu option
+while True:
+    name_to_validate = input("Enter your name to Login: ")
+    pin_to_validate = input("Enter your pin to Login: ")
+    if name_to_validate == user and pin_to_validate == pin:
+        print("Login Successful")
+        break
+    else:
+        print("Invalid Credentials!")
+
+while True:
+    atm_menu(user)
+    option = input("Choose an option: ")
