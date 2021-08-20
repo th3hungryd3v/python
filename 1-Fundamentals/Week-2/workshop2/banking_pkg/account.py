@@ -1,6 +1,7 @@
 # Task 4: The banking package
 def show_balance(balance):
-    print(float(balance))
+    print("Current Balance: $" + str(balance))
+
 
 def deposit(balance):
     amount = input("Enter the amount to deposit: ")
@@ -8,7 +9,7 @@ def deposit(balance):
 
 def withdraw(balance):
     amount = input("Enter the amount to withdraw: ")
-    return float(amount) - balance
+    return balance - float(amount) 
 
 def logout(name):
     print("Goodbye", name)
