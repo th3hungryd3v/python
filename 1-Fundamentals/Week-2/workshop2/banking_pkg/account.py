@@ -4,12 +4,12 @@ def show_balance(balance):
 
 
 def deposit(balance):
-    amount = input("Enter the amount to deposit: ")
-    return balance + float(amount)
+    amount = float(input("Enter the amount to deposit: "))
+    return balance + amount
 
 def withdraw(balance):
-    amount = input("Enter the amount to withdraw: ")
-    return balance - float(amount) 
+    amount = float(input("Enter the amount to withdraw: "))
+    return balance - amount 
 
 def logout(name):
     print("Goodbye", name)
