@@ -26,7 +26,7 @@ print(my_string)
 '''for char in my_string:
     print(char)
 '''
-# Finding whether a substring exists in a string
+# Finding whether a substring exists in a string using the in keyword
 
 print("pha" in my_string)
 print("z" in my_string)
